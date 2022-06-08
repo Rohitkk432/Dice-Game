@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Pig Game</title>
-  </head>
-  <body>
-    <main>
-      <section class="player player--0 player--active">
-        <h2 class="name" id="name--0">Player 1</h2>
-        <p class="score" id="score--0">0</p>
-        <div class="current">
-          <p class="current-label">Current</p>
-          <p class="current-score" id="current--0">0</p>
-        </div>
-      </section>
-      <section class="player player--1">
-        <h2 class="name" id="name--1">Player 2</h2>
-        <p class="score" id="score--1">0</p>
-        <div class="current">
-          <p class="current-label">Current</p>
-          <p class="current-score" id="current--1">0</p>
-        </div>
-      </section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Pig Game</title>
+    </head>
+    <body>
+        <main>
+            <section class="player player--0 player--active">
+                <h2 class="name" id="name--0">Player 1</h2>
+                <p class="score" id="score--0">0</p>
+                <div class="current">
+                    <p class="current-label">Current</p>
+                    <p class="current-score" id="current--0">0</p>
+                </div>
+            </section>
+            <section class="player player--1">
+                <h2 class="name" id="name--1">Player 2</h2>
+                <p class="score" id="score--1">0</p>
+                <div class="current">
+                    <p class="current-label">Current</p>
+                    <p class="current-score" id="current--1">0</p>
+                </div>
+            </section>
 
-      <img src="dice-5.png" alt="Playing dice" class="dice" />
-      <button class="btn btn--new">🔄 New game</button>
-      <button class="btn btn--roll">🎲 Roll dice</button>
-      <button class="btn btn--hold">📥 Hold</button>
-    </main>
-    <script src="script.js"></script>
-  </body>
+            <img src="dice-5.png" alt="Playing dice" class="dice" />
+            <button class="btn btn--new">🔄 New game</button>
+            <button class="btn btn--roll">🎲 Roll dice</button>
+            <button class="btn btn--hold">📥 Hold</button>
+            <button class="btn btn--rules">📜 Rules</button>
+        </main>
+        <div class="modal-of-rules hide-modal">
+            <div class="rules-modal-overlay"></div>
+            <div class="rules-modal-box">
+                <div class="rules-title">Rules :</div>
+                <div>1. This is a 2 player game.</div>
+                <div>
+                    2. When you roll the die the roll on top face is added to your score and you can keep rolling and increasing the score, but if you get a "one" you lose all your points and the die
+                    goes to other player.
+                </div>
+                <div>3. So to avoid loss of points player can tap "hold" to add points from current score to total score and the die goes to the opponent.</div>
+                <div>4. First player to reach 100 points wins the game.</div>
+                <div>5. Tap on "New Game" to reset the game.</div>
+                <button class="close-btn">x</button>
+            </div>
+        </div>
+        <!-- tsParticles container -->
+        <div id="tsparticles" class="particless"></div>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.25.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles-shape-confetti@1.10.0"></script>
+        <script src="script.js"></script>
+    </body>
 </html>

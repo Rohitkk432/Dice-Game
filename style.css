@@ -20,6 +20,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 /* LAYOUT */
@@ -34,6 +35,7 @@ main {
   border-radius: 9px;
   overflow: hidden;
   display: flex;
+  z-index: 5;
 }
 
 .player {
@@ -133,10 +135,13 @@ main {
   top: 4rem;
 }
 .btn--roll {
-  top: 39.3rem;
+  top: 37.3rem;
 }
 .btn--hold {
-  top: 46.1rem;
+  top: 44.1rem;
+}
+.btn--rules{
+  top: 50.8rem;
 }
 
 .btn:active {
@@ -167,5 +172,63 @@ main {
 }
 
 .hidden {
+  display: none;
+}
+
+.rules-modal-overlay{
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.rules-modal-box{
+  background: rgba(240, 248, 255);
+  z-index: 12;
+  width: 60vw;
+  height: 55vh;
+  position: absolute;
+  left: 20vw;
+  top: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 3rem 4rem;
+  border-radius: 10px;
+  font-size: x-large;
+}
+.rules-title{
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.close-btn{
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  top: 2rem;
+  right: 2rem;
+  z-index: 13;
+  font-size: xx-large;
+  border: #c7365f solid 2px;
+  border-radius: 10px;
+  padding-bottom:7px;
+}
+
+.hide-modal{
+  display: none;
+}
+
+#tsparticles {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+.particless {
   display: none;
 }
