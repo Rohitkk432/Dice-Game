@@ -25,6 +25,7 @@ body {
 
 /* LAYOUT */
 main {
+  transform: scale(0.8);
   position: relative;
   width: 100rem;
   height: 60rem;
@@ -198,24 +199,24 @@ main {
   align-items: flex-start;
   padding: 3rem 4rem;
   border-radius: 10px;
-  font-size: x-large;
+  font-size: large;
 }
 .rules-title{
   margin-bottom: 1rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 .close-btn{
   position: absolute;
-  width: 5rem;
-  height: 5rem;
-  top: 2rem;
-  right: 2rem;
+  width: 4.2rem;
+  height: 4.2rem;
+  top: 1.5rem;
+  right: 1.5rem;
   z-index: 13;
   font-size: xx-large;
   border: #c7365f solid 2px;
   border-radius: 10px;
-  padding-bottom:7px;
+  padding-bottom:10px;
 }
 
 .hide-modal{
