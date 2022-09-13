@@ -1,6 +1,6 @@
 # Dice-Game
 -mini-project
-Add 0x746C4e4a32EF13782714baAdAC1b83139981C5Ac
+Add 
 
 ## Rules:
 1. This is a 2 player game.
