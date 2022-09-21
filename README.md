@@ -1,6 +1,5 @@
 # Dice-Game
 -mini-project
-cha
 
 ## Rules:
 1. This is a 2 player game.
