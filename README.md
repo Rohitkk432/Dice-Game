@@ -1,6 +1,6 @@
 # Dice-Game
 -mini-project 
-changes made now
+changes made
 
 ## Rules:
 1. This is a 2 player game.
