@@ -1,7 +1,5 @@
 # Dice-Game
 -mini-project
-changes need to be made for spotlight tutorial
-readme rules should be crisp, and in layman terms
 
 ## Rules:
 1. This is a 2 player game.
